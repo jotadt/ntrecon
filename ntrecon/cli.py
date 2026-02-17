@@ -14,7 +14,7 @@ from config import DEFAULT_THREADS, REQUIRED_TOOLS
 from core.runner import run_recon
 from utils.logger import get_console, setup_logging
 
-app = typer.Typer(help="ntrecon - Orquestrador inteligente de recon para bug bounty.")
+app = typer.Typer(help="ntrecon - Your recon friend")
 console = get_console()
 
 
@@ -46,7 +46,7 @@ def main(
     setup_logging(verbose)
     _validate_dependencies(no_nuclei=no_nuclei)
 
-    console.print(Panel.fit("[bold cyan]ntrecon[/bold cyan]\n[white]Smart Bug Bounty Recon Orchestrator[/white]", border_style="cyan"))
+    console.print(Panel.fit("[bold cyan]ntrecon[/bold cyan]\n[white]Your Recon Friend[/white]", border_style="cyan"))
 
     results = run_recon(domain=domain, output_dir=str(output) if output else None, threads=threads, no_nuclei=no_nuclei)
     metrics = results["metrics"]
