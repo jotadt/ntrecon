@@ -52,10 +52,6 @@ output/
   testphp.vulnweb.com.md
 ```
 
-## Screenshot (placeholder)
-
-> Adicione aqui um screenshot real da execução do CLI (ex.: `docs/screenshot-terminal.md`).
-
 ## Estrutura do projeto
 
 ```text
@@ -80,13 +76,6 @@ ntrecon/
     └── logger.py
 ```
 
-## Roadmap
-
-- [ ] Adicionar suporte a fontes OSINT extras
-- [ ] Cache local de resultados por domínio
-- [ ] Regras customizáveis de scoring (YAML)
-- [ ] Exportar para HTML/PDF
-- [ ] Modo assíncrono para melhor performance
 
 ## Disclaimer ético
 
